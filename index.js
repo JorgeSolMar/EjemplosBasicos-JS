@@ -82,11 +82,15 @@
 
 //---------------------------FUNCION INMEDIATAMENTE AUTOINVOCATIVA IIFE
 //Se inician con parentesis y al final se abren y cierran parentesis nuevamente para autoinvocarse.
-(function (nombre){
+
+// (function suscribe (nombre){
+//     console.log(`Hola por favor suscribete ${nombre}`);
+// })('Juanito');
+
+(suscribete = (nombre) => {
     console.log(`Hola por favor suscribete ${nombre}`);
-})('Juanito');
 
-
+})('Jorge');
 
 
 //---------------------------TEMPLATE STRING
