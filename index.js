@@ -1,6 +1,6 @@
 
 
-//EJEMPLO DE USOS DE ARREGLOS
+//---------------------------EJEMPLO DE USOS DE ARREGLOS
 // Ejemplo de "for" con arreglos
 // let arreglo = [1,5,10,"ignacio",true];
 // console.log(arreglo);
@@ -10,7 +10,7 @@
 // }
 
 
-//Ejemplo de while en arreglos
+//---------------------------Ejemplo de while en arreglos
 // // let i = 0;
 // // while (i<10) {
 // //     console.log(i);
@@ -18,7 +18,7 @@
 // }
 
 
-// //Do While
+//---------------------------Do While
 // let i = 0;
 // do{
 //     console.log(i);
@@ -26,10 +26,10 @@
 // }while(i<0);
 
 
-//Switch
+//---------------------------Switch
 // let hora = 1;
 
-// switch(hora){
+//---------------------------switch(hora){
 //     case 10: 
 //         console.log('Son las 10 de la ma;ana');
 //         break;
@@ -42,7 +42,7 @@
 // }
 
 
-//FUNCIONES
+//---------------------------FUNCIONES
 
 // function suma(a,b){
 //     return console.log(a+b);
@@ -72,7 +72,7 @@
 // }
 // sumaTres()
 
-//FUNCION ARROW
+//---------------------------FUNCION ARROW, funcion de flecha
 
 // let sumaId = document.getElementById('suma');
 // let sumar = (num1, num2) => num1 + num2;
@@ -80,7 +80,16 @@
 // sumaId.innerHTML += sumar(10, 20);
 
 
-//TEMPLATE STRING
+//---------------------------FUNCION INMEDIATAMENTE AUTOINVOCATIVA IIFE
+//Se inician con parentesis y al final se abren y cierran parentesis nuevamente para autoinvocarse.
+(function (nombre){
+    console.log(`Hola por favor suscribete ${nombre}`);
+})('Juanito');
+
+
+
+
+//---------------------------TEMPLATE STRING
 
 // const numero = (num) => {
 //     return `El numero es: ${num}`
@@ -91,7 +100,7 @@
 // const numeroDos = num => `El numero es: ${num}`
 // console.log(numeroDos(25))
 
-//OBJETOS
+//---------------------------OBJETOS
 
 // const mascota = {
 //     nombre: 'Tom',
@@ -142,7 +151,7 @@
 // console.log(texto)
 // console.log(web.redesSociales.youtube.enlace)
 
-//DOM CON JAVASCRIPT
+//---------------------------DOM CON JAVASCRIPT
 // let h1 = document.getElementById('titulo');
 // console.log(h1.innerHTML)
 // h1.innerHTML = 'Un nuevo texto';
@@ -170,6 +179,35 @@
     
 //     })
 // })
+
+
+// //for of para desarrollar los arreglos/objetos
+// let arreglo = [
+//     {
+//         nombre: 'Jorge',
+//         apellido: 'Solis'
+//     },
+//     {
+//         nombre: 'Ale',
+//         apellido: 'Flores'
+//     },
+//     {
+//         nombre: 'Benito',
+//         apellido: 'Solis'
+//     },
+//     {
+//         nombre: 'Daniel',
+//         apellido: 'Solis'
+//     }
+// ]
+// // console.log(arreglo[0]);
+// // console.log(arreglo[1]);
+// // console.log(arreglo[2]);
+// // console.log(arreglo[3]);
+
+// for (let i of arreglo){
+//     console.log(i);
+// }
 
 
 
